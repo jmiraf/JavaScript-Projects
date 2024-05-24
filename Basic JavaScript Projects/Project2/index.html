@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<title>JavaScript</title>
+<script src="JS/main.js"></script>
+<body>
+<h2>Addition Operator</h2>
+<p id="add" onclick = "add_function()">Show me the answer</p>
+
+<hr>
+<h2>Subtraction Operator</h2>
+<button id="sub" onclick = "sub_function()">Show me the answer</button>
+
+<hr>
+<h2>Multiplication & Division</h2>
+7 * 6 = <button id="mul" onclick = "multiplication()">Equals</button>
+<br><br>
+48 / 6 = <button id="div" onclick = "division()">Equals</button>
+
+<hr>
+<h2>Multiple Operators</h2>
+<p id="operators" onclick = "multiple_function()">Click me</p>
+
+<hr>
+<h2>Modulus Operator</h2>
+<p id="modulus" onclick = "modulus_operator()">Click me</p>
+
+<hr>
+<h2>Unary Operator is an operation that only contains a single operand. An example of this would be + 5.</h2>
+<p id="unary" onclick = "negation_operator()">Click me</p>
+
+<hr>
+<h2>Increment and Decrement</h2>
+    <script>
+        function increment_operator() {
+        var x = 5;
+        x++; //add one to the value
+        document.getElementById("increment").innerHTML = x;
+    }
+
+        function decrement_operator() {
+        var x = 5.25;
+        x--; //subtract one from the value
+        document.getElementById("decrement").innerHTML = x;
+    }
+    </script>
+
+<a id="increment" onclick ="increment_operator()">Increment of 5 </a> <br>
+<a id="decrement" onclick ="decrement_operator()">Decrement of 5.25 </a> 
+
+<hr>
+<h2>Random</h2>
+<p id="random" onclick="random()">Random number between 0 and 10</p>
+
+
+</body>
+
+</html>
