@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<title>JavaScript Function</title>
+    <script>
+        function My_FirstFunction() {
+            var str = "This is the button text";
+            document.getElementById("button_text").innerHTML = str ;
+        }
+    </script>
+<body>
+<h2>My First Function</h2>
+    <p>
+        <button onclick="My_FirstFunction()" id="button_text">Click Me!</button>
+    </p>
+
+<hr>
+<h2>Event Challenge</h2>
+<br>
+    <button onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
+    <p id="demo"></p>
+<br>
+    <p>another event example: onmouseover: <button onmouseover="this.innerHTML=Date()">The time is?</button></p>
+<br>
+<hr>
+<h2>+= Operator</h2>
+
+    <script>
+        function My_secondfunction() {
+            var sentence = "I am learning" ;
+            sentence += " a lot from this course!" ;
+            document.getElementById("concatenate").innerHTML = sentence;
+        }
+    </script>
+    <p id="concatenate" onclick = "My_secondfunction()">Click here!</p>
+
+
+</body>
+
+</html>
