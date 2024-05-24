@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>If Else Statements</title>
+    
+</head>
+
+<body>
+
+    <h2>If Statements</h2>
+    <p id="greeting" onclick="get_Date()">Display <strong>Good day!</strong> if the hour is less than 18:00:</p>
+        <script>
+            function get_Date() {
+                if (new Date().getHours() < 18) {
+                    document.getElementById("greeting").innerHTML = "Good day!";
+                }
+            }
+        </script>
+    
+    <hr>
+
+    <h2>Else Statements</h2>
+    <p>Write your age:</p>
+    <input id="age" value="">
+    <p id="vote"></p>
+    <button onclick="Age_Function()">Click here</button>
+        <script>
+            function Age_Function() {
+                Age = document.getElementById("age").value ;
+                if (Age >= 18) {
+                    Vote = "You are old enough to vote";
+                }
+                else {
+                    Vote = "You are too young to vote" ;
+                }
+                document.getElementById("vote").innerHTML = Vote;
+            }
+        </script>
+
+    <hr>
+    <h2>Else if Statements</h2>
+        <p>A time-based greeting:</p>
+        <p id="demo"></p><button onclick="Time_Function()">Click here</button>
+
+        <script>
+            function Time_Function() {
+                const time = new Date().getHours();
+                let greeting;
+                    if (time < 10) {
+                    greeting = "Good morning!";
+                    } else if (time < 20) {
+                    greeting = "Good day!";
+                    } else {
+                    greeting = "Good evening!";
+                    }
+                document.getElementById("demo").innerHTML = greeting;
+            }
+            
+        </script>
+
+    <hr>
+    <h2>local and global variable</h2>
+    <script src="main.js"></script>
+
+</body>
+</html>
