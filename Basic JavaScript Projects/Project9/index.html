@@ -1,18 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <title>Countdown Slideshow</title>
-    
-</head>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Slideshow Challenge</title>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+  </head>
 
 <body>
+
+<br>
+<!-- Automatic Slideshow changes every 2 seconds -->
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1</div>
+  <img src="images/image1.jpg" style="width:100%" alt="slideshow 1">
+  <div class="text">TransCanada Highway</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2</div>
+  <img src="images/image2.jpg" style="width:100%" alt="slideshow 2">
+  <div class="text">Cascade Mountain</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3</div>
+  <img src="images/image3.jpg" style="width:100%" alt="slideshow 3">
+  <div class="text">Cascade Pond</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4</div>
+  <img src="images/image4.jpg" style="width:100%" alt="slideshow 4">
+  <div class="text">Cascade Mountain</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script src="JS/main.js"></script>
+<br>
+
+<br>
+<!-- countdown -->
     <p>How many seconds would you like to set your alarm for?</p>
     <input id="seconds" value="">
     <button onclick="countdown()">Click here</button>
     <p id="timer"></p>
+        <script>
+          function countdown() {
+          var seconds = document.getElementById("seconds").ariaValueMax;
 
-    <script src="JS/main.js"></script>
-    
+          function tick() {
+            seconds = seconds - 1;
+            timer.innerHTML = seconds;
+            var time = setTimeout(tick, 1000);
+            if (seconds == -1) {
+                alert("Time's up!");
+                clearTimeout(time);
+                timer.innerHTML = "";
+              } 
+          }
+          tick();
+         }
+        </script>
+
+
 </body>
-</html>
+</html> 
