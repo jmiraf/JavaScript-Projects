@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <title>Loops Arrays Assignment</title>
+    <script>
+      function count_to_ten() {
+        var digit = "";
+        var x = 1;
+        while (x < 11) {
+          digit += "<br>" + x;
+          x++;
+        }
+        document.getElementById("loop").innerHTML = digit;
+      }
+   </script>
+</head>
+
+<body>
+  
+  <button onclick="count_to_ten()">Click here to execute the loop</button>
+  <p id="loop"></p>
+  <br>
+  <h2>The length Property</h2>
+    <p>Find the length of "Hello World!":</p>
+    <p id="demo"></p>
+    <script>
+        let text = "Hello World!";
+        let length = text.length;
+        document.getElementById("demo").innerHTML = length;
+    </script>
+    <br>
+
+    <h2>For Loops</h2>
+    <button onclick="for_loop()">Click to see the output</button>
+    <p id="instruments"></p>
+    <script>
+        var instruments = ["Guitar", "Piano", "Flute", "Drums", "Violin"];
+        var content ="";
+        var y;
+        function for_loop() {
+            for (y = 0; y < instruments.length; y++) {
+                content += instruments[y] + "<br>";
+            }
+            document.getElementById("instruments").innerHTML = content;
+        }
+    </script>
+
+    <br>
+    <h2>Arrays and Objects</h2>
+    <button onclick="cat_pics()">Click me</button>
+    <p id="cat"></p>
+    <script>
+        function cat_pics() {
+            var cat_picture = [];
+            cat_picture[0] = "sleeping";
+            cat_picture[1] = "playing";
+            cat_picture[2] = "eating";
+            cat_picture[3] = "purring";
+            document.getElementById("cat").innerHTML = "In this picture, the cat is " + cat_picture[2] + ".";
+        }
+    </script>
+<br>
+    <h2>Const</h2>
+    <button onclick="const_function()">Click me</button>
+    <p id="constant"></p>
+    <script>
+        function const_function() {
+            const musical_inst = {type:"guitar", brand:"fender", color:"pink"};
+            musical_inst.color = "blue";
+            musical_inst.price = "$900";
+            document.getElementById("constant").innerHTML = "The cost of the " + musical_inst.type + " was " + musical_inst.price ;
+        }
+    </script>
+
+<br>
+    <h2>Objects</h2>
+    <p id="car_object"></p>
+    <script>
+        let car = {
+            make: "Dodge " ,
+            model: "Viper " ,
+            year: "2021 " ,
+            color: "red " ,
+            description: function () {
+                return "The car is a " + this.year + this.color + this.make + this.model;
+            }
+        };
+            document.getElementById("car_object").innerHTML = car.description();
+    </script>
+
+<br>
+    <h2>Loop with a break</h2>
+    <p id="break"></p>
+    <script>
+        let txt = "";
+        for (let i = 0; i < 10; i++) {
+        if (i === 3) { break; }
+        txt += "The number is " + i + "<br>";
+        }
+        document.getElementById("break").innerHTML = txt;
+    </script>
+
+<br>
+    <h2>Loop with a Continue statement</h2>
+    <p>A loop which will skip the step where i = 3.</p>
+    <p id="continue"></p>
+    <script>
+        let cont = "";
+            for (let i = 0; i < 10; i++) {
+            if (i === 3) { continue; }
+            cont += "The number is " + i + "<br>";
+        }
+        document.getElementById("continue").innerHTML = cont;
+    </script>
+
+
+</body>
+</html> 
