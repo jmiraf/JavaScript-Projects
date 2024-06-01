@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <title>Module 4</title>
+    
+</head>
+
+<body>
+    <h2 class="click">This text will change</h2>
+    <h4 class="click">This text will not change</h4>
+    <button onclick="class_functions()">Click me</button>
+
+    <script>
+        function class_functions() {
+            var a = document.getElementsByClassName("click");
+            a[0].innerHTML = "The text has changed!" ;
+        }
+    </script>
+<br><br>
+<canvas id="myCanvas" width="350" height="100" style="border:2px solid black;"></canvas>
+<script src="JS/javascript.js"></script>
+
+</body>
+</html> 
