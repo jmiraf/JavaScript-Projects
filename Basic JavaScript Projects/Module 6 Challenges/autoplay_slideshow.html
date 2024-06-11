@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <style> 
+        #slideshow { 
+        margin: 50px auto; 
+        position: relative; 
+        width: 600px; 
+        height: 450px; 
+        padding: 10px; 
+        box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+        }
+
+        #slideshow > div { 
+        position: absolute; 
+        top: 10px; 
+        left: 10px; 
+        right: 10px; 
+        bottom: 10px; 
+        }
+    </style>
+</head>
+    <script>
+        $("#slideshow > div:gt(0)").hide();
+
+        setInterval(function() { 
+        $('#slideshow > div:first')
+        .fadeOut(1000)
+        .next()
+        .fadeIn(1000)
+        .end()
+        .appendTo('#slideshow');
+        }, 3000);
+    </script>
+<body>
+    <div id="slideshow">
+        <div>
+          <img src="https://imageio.forbes.com/specials-images/imageserve/641397e79f04500b85460b8f/Apple--iPhone-15--iPhone-15-Pro-Max--iPhone-15-Pro--iPhone-15-Pro-design--iPhone-15/0x0.jpg" width="550px" alt="iphone 15">
+        </div>
+        <div>
+          <img src="https://m.media-amazon.com/images/I/81vxWpPpgNL._AC_UF1000,1000_QL80_.jpg" height="430px" alt="samsung S4">
+        </div>
+        <div>
+          Pretty cool eh? This slide is proof the content can be anything.
+        </div>
+      </div>
+
+
+</body>
+</html>
