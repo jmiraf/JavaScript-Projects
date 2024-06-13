@@ -4,8 +4,8 @@
 
   <h2>Projects</h2>
 	<ul>
-		<li><a href="Basic JavaScript Projects/Pizza menu/pizza.html">Pizza Menu </a></li>
-		<li><a href="#TicTac">Tic-Tac-Toe Game </a></li>
+		<li><a href="https://github.com/jmiraf/JavaScript-Projects/blob/84a7a4de0aa0e8735ad90d3ddce5b697adaedff7/Basic%20JavaScript%20Projects/Pizza%20menu/pizza.html">Pizza Menu </a></li>
+		<li><a href="https://github.com/jmiraf/JavaScript-Projects/blob/84a7a4de0aa0e8735ad90d3ddce5b697adaedff7/Basic%20JavaScript%20Projects/TicTacToe/TictacToe.html">Tic-Tac-Toe Game </a></li>
 		<li><a href="#Calc">Calculator </a></li>
 	</ul>
 	<h3>Pizza Menu</h3>
