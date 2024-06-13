@@ -4,7 +4,7 @@
 
   <h2>Projects</h2>
 	<ul>
-		<li><a href="#Pizza">Pizza Menu </a></li>
+		<li><a href="Basic JavaScript Projects/Pizza menu/pizza.html">Pizza Menu </a></li>
 		<li><a href="#TicTac">Tic-Tac-Toe Game </a></li>
 		<li><a href="#Calc">Calculator </a></li>
 	</ul>
